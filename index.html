@@ -39,7 +39,7 @@ nav.scrolled{box-shadow:0 4px 30px rgba(42,26,14,.08)}
 .nav-cta:hover{background:var(--moss-mid)!important;transform:translateY(-1px)!important}
 
 /* STRIP */
-.strip{background:var(--bark);color:var(--white);padding:18px 5%;text-align:center;font-size:.9rem;letter-spacing:.02em;position:relative;overflow:hidden}
+.strip{background:var(--bark);color:var(--white);padding:28px 5%;text-align:center;font-size:.9rem;letter-spacing:.02em;position:relative;overflow:hidden}
 .strip::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent 0,transparent 8px,rgba(255,255,255,.03) 8px,rgba(255,255,255,.03) 10px)}
 .strip span{position:relative}
 .strip a{color:var(--sun);font-weight:600;text-decoration:none}
@@ -163,8 +163,8 @@ nav.scrolled{box-shadow:0 4px 30px rgba(42,26,14,.08)}
 .diffs .sec-label{color:var(--bark-pale)}
 .diffs .sec-h2{color:var(--white)}
 .diffs .sec-sub{color:rgba(255,255,255,.6)}
-.masonry{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:60px;align-items:start}
-.d-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:34px 30px;margin-bottom:20px;transition:background .2s,transform .2s}
+.masonry{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:60px;align-items:start;width:100%}
+.d-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:34px 30px;transition:background .2s,transform .2s;min-width:0;overflow-wrap:break-word}
 .d-card:hover{background:rgba(255,255,255,.12);transform:translateY(-3px)}
 .d-card.sun{background:rgba(232,163,32,.14);border-color:rgba(232,163,32,.28)}
 .d-line{width:30px;height:2px;background:var(--sun);margin-bottom:16px}
@@ -262,7 +262,7 @@ footer{background:var(--soil);color:rgba(255,255,255,.65);padding:50px 5% 28px}
   </ul>
 </nav>
 
-<div style="height:72px"></div>
+<div style="height:100px"></div>
 <div class="strip">
   <span>✦ Matrícula abierta · Curso 2026/2027 · Plazas limitadas — <a href="#contacto">Reserva tu visita gratuita</a></span>
 </div>
@@ -485,7 +485,7 @@ footer{background:var(--soil);color:rgba(255,255,255,.65);padding:50px 5% 28px}
     </div>
     <div class="masonry reveal">
       <!-- Parchís: full width across both columns -->
-      <div class="d-card sun" style="grid-column:1/-1">
+      <div class="d-card sun" style="grid-column:1 / -1;margin-bottom:8px">
         <div class="d-line"></div>
         <h3>La historia de Parchís</h3>
         <p class="qt">«Tuvimos que dar en adopción a Parchís, nuestra oca. Nos dimos cuenta de que no era feliz. Bueno, se dieron cuenta los niños y las niñas, y les hicimos caso.»</p>
